@@ -11,6 +11,10 @@
 		43FB0B06266EAB6E00F50405 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB0B05266EAB6E00F50405 /* ContentView.swift */; };
 		43FB0B08266EAB7000F50405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43FB0B07266EAB7000F50405 /* Assets.xcassets */; };
 		43FB0B0B266EAB7000F50405 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43FB0B0A266EAB7000F50405 /* Preview Assets.xcassets */; };
+		43FB0B13266EABA200F50405 /* SwiftUIPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB0B12266EABA200F50405 /* SwiftUIPage.swift */; };
+		43FB0B15266EABD900F50405 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB0B14266EABD900F50405 /* Views.swift */; };
+		43FB0B17266EAE3A00F50405 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB0B16266EAE3A00F50405 /* Router.swift */; };
+		43FB0B19266EB12E00F50405 /* RouterSwiftUIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB0B18266EB12E00F50405 /* RouterSwiftUIAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		43FB0B07266EAB7000F50405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43FB0B0A266EAB7000F50405 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43FB0B0C266EAB7000F50405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43FB0B12266EABA200F50405 /* SwiftUIPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPage.swift; sourceTree = "<group>"; };
+		43FB0B14266EABD900F50405 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		43FB0B16266EAE3A00F50405 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		43FB0B18266EB12E00F50405 /* RouterSwiftUIAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterSwiftUIAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				43FB0B03266EAB6E00F50405 /* SwiftUIRoutingExampleApp.swift */,
+				43FB0B12266EABA200F50405 /* SwiftUIPage.swift */,
+				43FB0B14266EABD900F50405 /* Views.swift */,
+				43FB0B16266EAE3A00F50405 /* Router.swift */,
+				43FB0B18266EB12E00F50405 /* RouterSwiftUIAdapter.swift */,
 				43FB0B05266EAB6E00F50405 /* ContentView.swift */,
 				43FB0B07266EAB7000F50405 /* Assets.xcassets */,
 				43FB0B0C266EAB7000F50405 /* Info.plist */,
@@ -138,6 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43FB0B19266EB12E00F50405 /* RouterSwiftUIAdapter.swift in Sources */,
+				43FB0B15266EABD900F50405 /* Views.swift in Sources */,
+				43FB0B13266EABA200F50405 /* SwiftUIPage.swift in Sources */,
+				43FB0B17266EAE3A00F50405 /* Router.swift in Sources */,
 				43FB0B06266EAB6E00F50405 /* ContentView.swift in Sources */,
 				43FB0B04266EAB6E00F50405 /* SwiftUIRoutingExampleApp.swift in Sources */,
 			);

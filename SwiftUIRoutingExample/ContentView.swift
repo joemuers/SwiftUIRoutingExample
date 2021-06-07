@@ -2,15 +2,20 @@
 //  ContentView.swift
 //  SwiftUIRoutingExample
 //
-//  Created by joe muers on 07/06/2021.
-//
 
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showingSheet = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        Button("Go to Router flow") {
+            self.showingSheet.toggle()
+        }
+        .sheet(isPresented: self.$showingSheet) {
+            RouterSwiftUIAdapter()
+        }
     }
 }
 
