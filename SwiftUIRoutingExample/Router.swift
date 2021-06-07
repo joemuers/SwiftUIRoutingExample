@@ -30,6 +30,10 @@ final class Router: ScreenARouting, ScreenBRouting, ScreenCRouting {
         self.navController.pushViewController(SwiftUIPage(rootView: view, viewModel: vm), animated: true)
     }
     
+    func dismissFlow() {
+        self.navController.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
+    
     // MARK: ScreenBRouting
 
     func displayNextScreen() {
@@ -45,10 +49,6 @@ final class Router: ScreenARouting, ScreenBRouting, ScreenCRouting {
         self.navController.popViewController(animated: true)
     }
     
-    func dismissFlow() {
-        self.navController.presentingViewController?.dismiss(animated: true, completion: nil)
-    }
-    
     // MARK: ScreenCRouting
     
     func dismissPresentedScreen() {
@@ -56,6 +56,8 @@ final class Router: ScreenARouting, ScreenBRouting, ScreenCRouting {
     }
 }
 
+// Note - this class is needed because iOS seems to constantly re-set the navigationBarHidden
+// property when interacting with SwiftUI. 
 private class NavControllerWithHiddenNavBar: UINavigationController {
     
     init() {
